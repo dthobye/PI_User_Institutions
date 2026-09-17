@@ -1,0 +1,21 @@
+shortname,fullname,health_score,health_category,utilization_rate_pct,user_count,support_priority
+TEST2222,TEST 1-2,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+TEST1499,Test Programme,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+TEST0997,TEST 1-1,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+TES4B,Test Research Programme 4 BB,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+TES3B,Test3 Research Programme BB,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+ASTR0879,Radio Analysis from MHz to Hundreds of GHz,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+TES2B,TES2: Test Research Programme BB,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+PHYS1815,Quantum Simulation and Optimisation,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+PHYS1802,Quantum many-body systems in and out of equilibrium,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+CBBI0822,Biodiversity Informatics,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+CBBI0953,Coevolution of antibody lineages and HIV epitopes,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+CBBI0954,Monoclonal antibody modelling,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+MECH1297,Modelling of Minerals Processing Equipment and Processes,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+MECH1308,Analysis of variability within the South African Power System,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+MECH1350,Optimal pulse patterns,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+MECH1357,Using trajectory optimization to inspire controller design for legged robots,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+MECH1439,Multibody Dynamics Modeling with Complex Terramechanics,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+MECH1568,Electronic Energy Processing,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+MECH1592,Hydrogen safety and hydrogen recombiners: CFD approach. Hydrogen energy,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
+MECH1603,Emerging Digital Technologies for 4IR,0,Poor,0.0,0,No Usage; Expiring Soon; No Users Assigned
