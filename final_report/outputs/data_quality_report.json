@@ -1,0 +1,25 @@
+{
+  "profiling_date": "2026-08-24T13:17:14.157595",
+  "users_count": 4221,
+  "projects_count": 1018,
+  "user_project_relationships": 5053,
+  "total_cpu_allocated": 402511638.0,
+  "total_cpu_used": 118241359.0,
+  "overall_utilization_pct": 29.4,
+  "quality_flags": {
+    "Missing Data": {
+      "users_no_institution": 7,
+      "users_no_discipline": 467,
+      "projects_no_staff": 96
+    },
+    "Data Consistency": {
+      "duplicate_project_keys": 2,
+      "zero_allocation_projects": 0,
+      "unmapped_user_projects": 0
+    },
+    "Activity Status": {
+      "inactive_users": 0,
+      "inactive_projects": 386
+    }
+  }
+}

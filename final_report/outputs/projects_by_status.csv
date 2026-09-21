@@ -1,0 +1,5 @@
+status,project_count,total_allocated,total_used,mean_utilization
+1,1,100000,0,0.0
+2,858,351154638,94228680,12.9
+3,136,34457000,11173030,11.9
+4,23,16800000,12839649,20.0

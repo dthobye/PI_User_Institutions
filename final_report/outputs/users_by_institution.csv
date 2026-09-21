@@ -1,0 +1,132 @@
+institution_name,user_count,total_usage,mean_usage,median_usage,avg_projects
+University of Limpopo,160,223683053.4,1398019.1,79939.4,1.2
+0 Other,467,166187714.0,355862.3,8145.1,1.1
+University of Cape Town,482,153663107.9,318803.1,5564.5,1.2
+University of the Witwatersrand,145,142536715.8,983011.8,30197.8,1.2
+University of KwaZulu-Natal,345,116563995.5,337866.7,28652.4,1.2
+Rhodes University,136,113737068.6,836302.0,101631.8,1.5
+University of Pretoria,414,99646147.5,240691.2,19784.1,1.2
+North-West University,152,98335780.3,646945.9,16700.0,1.2
+Kwame Nkrumah University of Science and Technology,251,89012554.7,354631.7,150408.7,1.1
+Stellenbosch University,308,64692822.4,210041.6,28802.1,1.2
+Council for Scientific and Industrial Research,92,61145167.7,664621.4,9981.4,1.2
+University of Johannesburg,132,56914132.8,431167.7,66343.3,1.2
+Universiti Marien Ngouabi,17,55016026.7,3236236.9,2808404.9,1.0
+University of the Free State,29,31374964.4,1081895.3,197864.8,1.3
+"Technical University of Kenya, Nairobi, Kenya",20,20478925.9,1023946.3,533784.1,1.1
+University of South Africa,53,19954530.3,376500.6,11669.0,1.2
+South African Weather Service,20,17720179.6,886009.0,28197.0,1.3
+University of Venda,39,17104329.3,438572.5,58570.2,1.1
+University of Western Cape,90,16363141.8,181812.7,13119.7,1.1
+Agricultural Research Council,54,16011543.0,296510.1,9624.5,1.2
+University of Ghana,56,11178753.1,199620.6,24463.4,1.1
+Mintek,16,8884856.1,555303.5,84041.4,1.2
+University of Ngaoundere,1,8818267.0,8818267.0,8818267.0,1.0
+Centre for High Performance Computing,133,8755692.1,65832.3,651.3,1.4
+"University of Eldoret, Eldoret, Kenya",8,8298225.9,1037278.2,231289.6,1.1
+Tshwane University of Technology,14,8190674.6,585048.2,22401.1,1.2
+University of Nigeria,3,7053223.7,2351074.6,32902.6,1.7
+"Moi University, Eldoret, Kenya",7,6966248.0,995178.3,288367.3,1.1
+Nelson Mandela Metropolitan University,35,6452620.4,184360.6,26654.0,1.1
+Durban University of Technology,51,6244443.8,122440.1,26286.1,1.0
+Johnson Matthey,4,5798040.1,1449510.0,1377910.9,1.0
+University of Kinsasha,2,5635660.0,2817830.0,2817830.0,3.5
+Addis Abba University,18,5617764.2,312098.0,219117.9,1.0
+"Masinde Muliro University of Science and Technology, Kakamega, Kenya",26,5014194.2,192853.6,21788.7,1.2
+University of Douala,1,4455972.8,4455972.8,4455972.8,1.0
+University of Botswana,9,4363758.3,484862.0,157710.6,1.2
+University of Nairobi,29,4257660.7,146815.9,49020.8,1.3
+University of Fort Hare,8,4187456.3,523432.0,105933.6,1.0
+Mangosuthu University of Technology,12,4177112.0,348092.7,18343.8,1.5
+African Institute for Mathematical Sciences,43,3759494.5,87430.1,1376.2,1.1
+"The Catholic University of Eastern Africa, Nairobi, Kenya",6,3451724.4,575287.4,375546.2,1.5
+Copperbelt University,5,3369591.0,673918.2,1497.1,1.4
+"Kenyatta University, Nairobi, Kenya",10,3316798.0,331679.8,102162.8,1.1
+SACEMA / Stellenbosch University,19,3055190.4,160799.5,79855.8,1.3
+Federal University of Agriculture,6,2697065.3,449510.9,43111.3,1.2
+"International Centre of Insect Physiology and Ecology, Nairobi, Kenya",11,2437403.3,221582.1,29401.9,1.4
+South African National Bioinformatics Institute,9,2050189.2,227798.8,87832.6,1.3
+Sefaku Makgatho Health Sciences University,13,1815646.3,139665.1,17135.9,1.1
+BIUST,2,1644387.0,822193.5,822193.5,1.0
+University of Ilorin,1,1500547.2,1500547.2,1500547.2,1.0
+University of Yaounde,2,1499484.0,749742.0,749742.0,1.0
+Aerotherm,7,1497922.2,213988.9,253089.8,1.7
+"Nesvard Institute of Molecular Sciences, Ghana",8,1285180.5,160647.6,12448.7,1.2
+University of Namibia,9,1176028.2,130669.8,43767.3,1.2
+"Maseno University, Kisumu, Kenya",4,1118693.0,279673.3,306445.4,1.2
+Centre for Proteomic and Genomic Research,9,1019243.7,113249.3,1741.9,1.6
+"Egerton University, Egerton, Kenya",5,1017284.0,203456.8,39205.3,1.4
+"Jaramogi Oginga Odinga University, Bondo, Kenya",1,988733.8,988733.8,988733.8,1.0
+De Beers Marine,2,897643.5,448821.7,448821.7,1.0
+Medical Research Council,6,894235.0,149039.2,13829.6,1.2
+Vaal University of Technology,2,887124.5,443562.3,443562.3,1.0
+Nuclear Energy Cooperation of SA,7,814200.1,116314.3,11990.1,1.0
+SAEON,4,797429.1,199357.3,110951.8,1.0
+Council for Geoscience,5,708181.2,141636.2,2304.0,1.0
+Cauchy Consult,3,656545.2,218848.4,218796.7,1.3
+NITHEP,2,645938.4,322969.2,322969.2,1.0
+University of Benin,1,504376.1,504376.1,504376.1,3.0
+Bejaia University,2,499428.3,249714.2,249714.2,1.0
+Hatch,3,463855.0,154618.3,110620.8,1.0
+African University of Science and Technology,1,449719.5,449719.5,449719.5,1.0
+SKA,9,440113.6,48901.5,38300.2,1.4
+Inqaba Biotec,4,340351.5,85087.9,82368.6,1.2
+South African National Biodiversity Institute,5,311688.2,62337.6,1256.3,1.4
+eScience,2,309197.2,154598.6,154598.6,1.0
+Walter Sisulu University,5,299382.3,59876.5,51137.7,1.0
+"University of Dodoma, Dodoma, Tanzania",2,297254.5,148627.2,148627.2,1.0
+Nelson Mandela University,11,292919.8,26629.1,3073.3,1.0
+Epsilon Engineering,1,285643.4,285643.4,285643.4,2.0
+University of Cambridge HPCS,1,281087.3,281087.3,281087.3,2.0
+Aim Technologies,1,274870.9,274870.9,274870.9,3.0
+University of Zululand,8,258602.2,32325.3,6179.0,1.0
+Starke Ayres,1,222059.3,222059.3,222059.3,1.0
+"Kisii University, Kisii, Kenya",5,217511.0,43502.2,15261.6,1.2
+Cluster Resources,1,206662.4,206662.4,206662.4,2.0
+SMEC,1,195428.4,195428.4,195428.4,1.0
+BBE Consulting,3,189311.2,63103.7,11303.2,1.0
+Qfinsoft,2,175819.7,87909.8,87909.8,1.0
+"Kaimosi Friends University College, Kaimosi, Kenya",1,154706.9,154706.9,154706.9,2.0
+Cinnamon Teal Aerospace,1,146941.2,146941.2,146941.2,2.0
+Zutari,1,143133.9,143133.9,143133.9,2.0
+Eduardo Mondlane University,3,142407.0,47469.0,6773.9,1.3
+Central University of Technology,1,141654.7,141654.7,141654.7,1.0
+ONE Bio,8,134613.0,16826.6,14272.2,1.1
+National Zoological Gardens of South Africa,4,130974.7,32743.7,1448.8,1.0
+"Malawi Liverpool Wellcome, Blantyre",2,113253.7,56626.8,56626.8,1.0
+SA Sugercane Research Institute,1,112942.9,112942.9,112942.9,1.0
+"Chuka University, Chuka, Kenya",6,97507.1,16251.2,12.5,1.0
+"University of Energy and Natural Resources, Ghana",1,96195.4,96195.4,96195.4,1.0
+Oceanographic Research Institute (ORI),6,89783.8,14964.0,3190.2,1.0
+Greenplan,2,86714.9,43357.5,43357.5,1.0
+Cape Peninsula University of Technology,5,83180.4,16636.1,22.3,1.0
+GLPS,1,75070.9,75070.9,75070.9,1.0
+NICD,2,45756.7,22878.3,22878.3,1.0
+"University of Health and Allied Sciences, Ghana",5,34174.3,6834.9,1427.6,1.4
+South African Astronomical Observatory,1,31606.7,31606.7,31606.7,1.0
+"Kabarak University, Nakuru, Kenya",7,27424.2,3917.7,247.1,1.0
+Howden South Africa,1,26864.9,26864.9,26864.9,1.0
+"Jomo Kenyatta University of Agriculture and Technology, Nairobi, Kenya",2,26811.5,13405.8,13405.8,1.5
+Agriprotein,1,25388.6,25388.6,25388.6,1.0
+Eskom,1,21744.5,21744.5,21744.5,1.0
+"Pwani University, Kilifi, Kenya",2,19891.2,9945.6,9945.6,1.0
+National University of Lesotho,3,18451.6,6150.5,795.7,1.0
+Rotech Systems,1,17630.7,17630.7,17630.7,1.0
+"FTT Technology, Namibia",1,13383.4,13383.4,13383.4,1.0
+SAIAB,1,12935.6,12935.6,12935.6,1.0
+iThemba Labs,4,12555.5,3138.9,810.2,1.0
+EnFloTech,1,5587.0,5587.0,5587.0,1.0
+UK Met Office,1,5204.5,5204.5,5204.5,2.0
+South African National Space Agency,1,4175.4,4175.4,4175.4,1.0
+EMSS Consulting,1,2453.2,2453.2,2453.2,1.0
+Nanodyn,1,1747.7,1747.7,1747.7,1.0
+IRD,3,1658.3,552.8,557.8,1.0
+Biomine Health,2,1342.1,671.1,671.1,1.0
+University of Swaziland,11,1227.5,111.6,8.2,1.0
+Altair Engineering Ltd,2,665.4,332.7,332.7,1.5
+Optinum,1,95.6,95.6,95.6,1.0
+International Centre for Theoretical Physics,1,29.4,29.4,29.4,1.0
+Harare Institute of Technology,1,13.6,13.6,13.6,1.0
+"Angola Cables, Luanda",1,3.0,3.0,3.0,1.0
+STFC Daresbury Lab,2,1.4,0.7,0.7,1.0
+"Lerotholi Polytechnic, Lesotho",1,0.0,0.0,0.0,1.0
