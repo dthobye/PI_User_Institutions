@@ -25,8 +25,6 @@ import numpy as np
 from pathlib import Path
 import json
 
-# Configure input and output locations
-
 # Path to the directory containing this script
 DATA_DIR = Path(__file__).resolve().parent
 
@@ -52,8 +50,6 @@ except Exception as e:
     
 # Profile the dataset to evaluate data completeness, 
 # detect null values, and inspect column data types.
-"""
-
 print("\n" + "=" * 80)
 print("USERS DATASET PROFILING")
 print("=" * 80)
@@ -100,7 +96,6 @@ print(users_df['project_count'].value_counts().sort_index().head(10))
 
 # Evaluate project allocation, utilisation patterns, metadata completeness,
 # and project status distributions.
-
 print("\n" + "=" * 80)
 print("PROJECTS DATASET PROFILING")
 print("=" * 80)
@@ -259,7 +254,7 @@ util_profile = projects_df['utilization_band'].value_counts().sort_index()
 util_profile.to_csv(OUTPUT_DIR / 'projects_utilization_bands.csv')
 print(f"✓ Exported: projects_utilization_bands.csv")
 
-# Data quality report
+# Create Data quality assessment report
 quality_report = {
     'profiling_date': pd.Timestamp.now().isoformat(),
     'users_count': int(users_df.shape[0]),
@@ -275,6 +270,9 @@ with open(OUTPUT_DIR / 'data_quality_report.json', 'w') as f:
     json.dump(quality_report, f, indent=2)
 print(f"✓ Exported: data_quality_report.json")
 
+# Phase 1 deliverables are now available in the outputs folder.
+# These artefacts form the baseline assessment required for
+# indicator development and dashboard construction in Phase 2.
 print("\n" + "=" * 80)
 print("PHASE 1 COMPLETE")
 print("=" * 80)
