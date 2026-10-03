@@ -32,8 +32,8 @@ Execute the processing steps in the following order:
 - python build_dashboard.py
 - python validate_project.py
 
-- Output Files
-Insert Table
+Output Files
+"Insert Table
 
 Important Notes:
 - The analysis is based on a historical snapshot with a fixed reference date of 2026-05-14.
