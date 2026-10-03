@@ -1,13 +1,23 @@
 #!/usr/bin/env python3
 """
-Phase 1: Data Profiling and Quality Assessment
-CSM500-2026 User-Community Intelligence Project
 
-Objective:
-- Profile users.csv and projects.csv for completeness, consistency, and usability
-- Map user-project relationships
-- Document data quality baseline
-- Inform indicator design
+Phase 1: Data Profiling and Quality Assessment
+objective:
+This script performs an initial assessment of CHPC user and project data.
+It establishes a data quality baseline, identifies completeness and
+consistency issues, and generates summary reports that will be used
+to design analytics indicators in Phase 2.
+
+Inputs:
+- users.csv
+- projects.csv
+ 
+Outputs:
+- users_by_institution.csv
+- users_by_discipline.csv
+- projects_by_status.csv
+- projects_utilization_bands.csv
+- data_quality_report.json
 """
 
 import pandas as pd
@@ -15,18 +25,21 @@ import numpy as np
 from pathlib import Path
 import json
 
-# Setup
+# Configure input and output locations
+
+# Path to the directory containing this script
 DATA_DIR = Path(__file__).resolve().parent
-OUTPUT_DIR = DATA_DIR / 'outputs'
+
+# Create destination directory
+OUTPUT_DIR = DATA_DIR / 'outputs'  
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 print("=" * 80)
 print("PHASE 1: DATA PROFILING AND QUALITY ASSESSMENT")
 print("=" * 80)
 
-# ==============================================================================
-# 1. LOAD DATASETS
-# ==============================================================================
+# Load user and project datasets from CSV files.
+# If either file is missing or corrupted, stop execution immediately.
 print("\n[1] Loading datasets...")
 try:
     users_df = pd.read_csv(DATA_DIR / 'users.csv')
@@ -36,10 +49,11 @@ try:
 except Exception as e:
     print(f"✗ Error loading data: {e}")
     exit(1)
+    
+# Profile the dataset to evaluate data completeness, 
+# detect null values, and inspect column data types.
+"""
 
-# ==============================================================================
-# 2. USERS DATASET PROFILING
-# ==============================================================================
 print("\n" + "=" * 80)
 print("USERS DATASET PROFILING")
 print("=" * 80)
@@ -74,6 +88,8 @@ print(f"  Users with < 1000 CPU hours: {(users_df['total'] < 1000).sum()}")
 print(f"  Users with >= 1000 CPU hours: {(users_df['total'] >= 1000).sum()}")
 
 print("\n[2d] Users - Project Portfolio")
+
+# Count projects per user
 users_df['project_count'] = users_df['project_shortnames'].fillna('').apply(
     lambda x: len([p.strip() for p in str(x).split(',') if p.strip()])
 )
@@ -82,9 +98,9 @@ print(f"Users without project assignments: {(users_df['project_count'] == 0).sum
 print(f"Project portfolio size distribution:")
 print(users_df['project_count'].value_counts().sort_index().head(10))
 
-# ==============================================================================
-# 3. PROJECTS DATASET PROFILING
-# ==============================================================================
+# Evaluate project allocation, utilisation patterns, metadata completeness,
+# and project status distributions.
+
 print("\n" + "=" * 80)
 print("PROJECTS DATASET PROFILING")
 print("=" * 80)
@@ -108,6 +124,8 @@ print(f"\nProject status distribution:")
 print(projects_df['status'].value_counts())
 
 print("\n[3c] Projects - Allocation vs. Usage")
+
+#Calculate project utilisation percentage.
 projects_df['utilization_rate'] = (
     projects_df['used_hours'] / projects_df['cpu_hours'] * 100
 ).round(1)
@@ -131,9 +149,9 @@ projects_df['allo_end'] = pd.to_datetime(projects_df['allo_end'], errors='coerce
 print(f"Earliest allocation start: {projects_df['allo_start'].min()}")
 print(f"Latest allocation end: {projects_df['allo_end'].max()}")
 
-# ==============================================================================
-# 4. USER-PROJECT MAPPING
-# ==============================================================================
+# Create a normalized mapping between users and projects.
+# This converts comma-separated project lists into a one-user-to-one-project
+# relationship structure suitable for analysis.
 print("\n" + "=" * 80)
 print("USER-PROJECT MAPPING")
 print("=" * 80)
@@ -153,7 +171,8 @@ user_project_df = pd.DataFrame(user_project_pairs)
 print(f"Total user-project relationships: {len(user_project_df)}")
 print(f"Unique project shortnames referenced: {user_project_df['project_shortname'].nunique()}")
 
-# Cross-reference with projects dataset
+# Cross-reference user project references against
+# the official projects dataset to identify inconsistencies.
 projects_set = set(projects_df['shortname'].unique())
 user_refs = set(user_project_df['project_shortname'].unique())
 unmapped = user_refs - projects_set
@@ -165,9 +184,6 @@ print("\n[4b] Project Reference Coverage")
 print(f"Projects with user references: {user_project_df['project_shortname'].nunique()}")
 print(f"Projects without user references: {len(projects_set) - user_project_df['project_shortname'].nunique()}")
 
-# ==============================================================================
-# 5. DATA QUALITY SUMMARY
-# ==============================================================================
 print("\n" + "=" * 80)
 print("DATA QUALITY SUMMARY")
 print("=" * 80)
@@ -195,14 +211,12 @@ for category, flags in quality_flags.items():
         pct = (count / total * 100) if total > 0 else 0
         print(f"  {flag_name}: {count} / {total} ({pct:.1f}%)")
 
-# ==============================================================================
-# 6. EXPORT SUMMARY PROFILES
-# ==============================================================================
 print("\n" + "=" * 80)
 print("EXPORTING SUMMARY PROFILES")
 print("=" * 80)
 
-# Users summary
+# Generate institution-level user activity summary.
+# Used for reporting institutional participation and resource consumption.
 users_summary = users_df.groupby('institution_name').agg({
     'user_id': 'count',
     'total': ['sum', 'mean', 'median'],
@@ -213,7 +227,8 @@ users_summary = users_summary.sort_values('total_usage', ascending=False)
 users_summary.to_csv(OUTPUT_DIR / 'users_by_institution.csv')
 print(f"✓ Exported: users_by_institution.csv")
 
-# Discipline summary
+# Generate discipline-level usage statistics to support
+# research community engagement reporting.
 discipline_summary = users_df.groupby('discipline_name').agg({
     'user_id': 'count',
     'total': ['sum', 'mean'],
@@ -224,7 +239,8 @@ discipline_summary = discipline_summary.sort_values('total_usage', ascending=Fal
 discipline_summary.to_csv(OUTPUT_DIR / 'users_by_discipline.csv')
 print(f"✓ Exported: users_by_discipline.csv")
 
-# Projects summary
+# Summarise projects by lifecycle status,
+# including allocations, usage and utilisation.
 projects_summary = projects_df.groupby('status').agg({
     'id': 'count',
     'cpu_hours': 'sum',
