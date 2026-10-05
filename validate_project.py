@@ -8,8 +8,6 @@ phases exist, contain valid data, and meet expected quality criteria.
 This validation step acts as a quality assurance control to ensure
 that the analytical pipeline has executed successfully and that
 dashboard outputs are ready for reporting and assessment.
-Validate the generated project outputs.
-
 """
 
 from pathlib import Path
