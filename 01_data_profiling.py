@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
-
 Phase 1: Data Profiling and Quality Assessment
-objective:
+
 This script performs an initial assessment of CHPC user and project data.
 It establishes a data quality baseline, identifies completeness and
 consistency issues, and generates summary reports that will be used
