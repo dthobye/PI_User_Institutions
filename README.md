@@ -23,14 +23,24 @@ Requirements
 - Pandas
 - NumPy
 - Plotly
-Input datasets: users.csv and projects.csv
 
-Running the Data Pipeline
-Execute the processing steps in the following order:
-- python 01_data_profiling.py
-- python 02_analytics_pipeline.py
-- python build_dashboard.py
-- python validate_project.py
+Project Workflow
+  users.csv + projects.csv
+            │
+            ▼
+01_data_profiling.py
+            │
+            ▼
+02_analytics_pipeline.py
+            │
+            ▼
+build_dashboard.py
+            │
+            ▼
+dashboard.html
+            │
+            ▼
+app.py (Flask Web Interface)
 
 Output Files
 | File | Description |
