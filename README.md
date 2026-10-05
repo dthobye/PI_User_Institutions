@@ -33,7 +33,22 @@ Execute the processing steps in the following order:
 - python validate_project.py
 
 Output Files
-"Insert Table
+| File | Description |
+|--------|-------------|
+| data_quality_report.json | Summary of data profiling results, completeness checks, and quality metrics. |
+| user_indicators.csv | User-level KPIs including participation, usage trends, and activity classifications. |
+| project_indicators.csv | Project-level KPIs including utilisation, health scores, and lifecycle indicators. |
+| critical_projects_for_support.csv | Governance report identifying projects that may require intervention or support. |
+| INDICATOR_CATALOGUE.md | Data dictionary describing calculated indicators and metrics. |
+| dashboard.html | Interactive Plotly dashboard containing visualisations and KPI summaries. |
+
+Flask Web Interface 
+The Flask application provides a lightweight web-based interface that allows users to:
+- Execute a full analytics refresh from the browser.
+- Monitor pipeline execution status.
+- View generated user and project metrics.
+- Access the interactive dashboard.
+- Retrieve application status through a REST API endpoint.
 
 Important Notes:
 - The analysis is based on a historical snapshot with a fixed reference date of 2026-05-14.
