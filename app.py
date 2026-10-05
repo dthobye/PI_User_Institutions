@@ -1,3 +1,14 @@
+"""
+app.py
+
+Main Flask application for the HPC User-Community Intelligence System.
+
+This application provides a web-based interface for executing
+the analytics pipeline, viewing generated metrics, monitoring
+pipeline execution status, and accessing the interactive
+dashboard.
+"""
+
 from __future__ import annotations
 
 import subprocess
@@ -5,7 +16,7 @@ import sys
 from pathlib import Path
 
 # Flask components used to build the web interface and API endpoints.
-from flask import Flask, jsonify, redirect, render_template_string, request, send_from_directory, url_for
+from flask import Flask, jsonify, redirect, render_template_string, send_from_directory, url_for
 
 # Define application directories.
 BASE_DIR = Path(__file__).resolve().parent
@@ -126,7 +137,6 @@ def run_pipeline_scripts() -> dict[str, object]:
 
     steps: list[dict[str, str]] = []
     ok = True
-
 
     for script in scripts:
         # Execute each pipeline stage using the current Python interpreter.
