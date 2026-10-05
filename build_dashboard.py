@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """
-Phase 3: HTML Dashboard Generator 
+Phase 3: HTML Dashboard Generator
 
-This script transforms the analytical indicators generated in Phase 2 into an
-interactive HTML dashboard that supports monitoring, reporting,
-governance oversight, and strategic decision-making.
+This script transforms the analytical indicators generated in
+Phase 2 into an interactive HTML dashboard that supports
+monitoring, reporting, governance oversight, and strategic
+decision-making.
 
 The dashboard presents key performance indicators (KPIs),
-visual analytics, utilisation insights, and community engagement
-metrics in a user-friendly format.
+visual analytics, utilisation insights, and community
+engagement metrics in a user-friendly format.
 """
-
 import pandas as pd
 from pathlib import Path
 import plotly.graph_objects as go
@@ -428,7 +428,8 @@ html_template = """<!DOCTYPE html>
 </body>
 </html>"""
 
-# Replace placeholders with actual charts
+# Embed generated Plotly visualisations and calculated KPI
+# values into the final dashboard HTML template.
 final_html = html_template.replace('{CHART1}', chart1_html)
 final_html = final_html.replace('{CHART2}', chart2_html)
 final_html = final_html.replace('{CHART3}', chart3_html)
