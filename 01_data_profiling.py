@@ -72,7 +72,6 @@ print(f"Gender distribution:\n{users_df['gender'].value_counts(dropna=False)}")
 print(f"\nEthnicity distribution:\n{users_df['ethnicity'].value_counts(dropna=False)}")
 
 print("\n[2c] Users - Usage Summary (CPU hours)")
-usage_cols = [c for c in users_df.columns if 'usage' in c.lower()]
 print(f"Total usage (all time): {users_df['total'].sum():,.0f} CPU hours")
 print(f"Mean per user: {users_df['total'].mean():,.0f} CPU hours")
 print(f"Median per user: {users_df['total'].median():,.0f} CPU hours")
@@ -119,7 +118,7 @@ print(projects_df['status'].value_counts())
 
 print("\n[3c] Projects - Allocation vs. Usage")
 
-#Calculate project utilisation percentage.
+# Calculate project utilisation percentage.
 projects_df['utilization_rate'] = (
     projects_df['used_hours'] / projects_df['cpu_hours'] * 100
 ).round(1)
