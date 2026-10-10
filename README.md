@@ -1,23 +1,24 @@
-HPC User Community Intelligence Dashboard
+# HPC User Community Intelligence Dashboard
+
 A governance intelligence and decision-support framework that transforms anonymized HPC user and project data into actionable insights through automated analytics, governance reporting, and interactive dashboards.
 
-Objective
+# Objective
 The objective of this project is to transform anonymized HPC user and project data into governance intelligence that supports operational monitoring, performance assessment, stakeholder reporting, and evidence-based decision-making within a High Performance Computing environment.
 
-Overview
+# Overview
 
-The HPC User Community Intelligence Dashboard is a data analytics and decision-support solution developed to transform anonymized HPC user and project datasets into actionable governance insights. The framework automates data profiling, indicator calculation, governance reporting, and dashboard generation, enabling stakeholders to monitor user engagement, project performance, and institutional participation through interactive visualizations.
+The HPC User Community Intelligence Dashboard is a data analytics and decision-support solution developed to transform anonymized HPC user and project datasets into actionable governance insights. The framework automates data profiling, indicator calculation, governance reporting, and dashboard generation, enabling stakeholders to monitor user engagement, project performance, and resource utilisation and institutional participation through interactive visualizations.
 
 The system produces:
 
-Data quality summaries
-User and project performance indicators
-Governance reports
-Interactive Plotly dashboards
+- Data quality summaries
+- User and project performance indicators
+- Governance reports
+- Interactive Plotly dashboards
 
 The application includes a Flask-based web interface for refreshing data and viewing dashboard outputs.
 
-Features
+# Features
 - Automated data profiling and validation
 - User participation and trend analysis
 - Project utilisation and health indicators
@@ -25,13 +26,13 @@ Features
 - Interactive dashboard visualisations
 - Flask web interface for data refresh and dashboard access
 
-Requirements
+# Requirements
 - Python 3.8 or later
 - Flask
 - Pandas
 - Plotly
 
-Technologies Used
+# Technologies Used
 - Python
 - Pandas
 - NumPy
@@ -41,25 +42,25 @@ Technologies Used
 - HTML
 - CSS
 
-Project Workflow
-users.csv + projects.csv
-        │
-        ▼
-01_data_profiling.py
-        │
-        ▼
-02_analytics_pipeline.py
-        │
-        ▼
-build_dashboard.py
-        │
-        ▼
-dashboard.html
-        │
-        ▼
-app.py (Flask Web Interface)
+# Project Workflow
+ users.csv + projects.csv
+         │
+         ▼
+ 01_data_profiling.py
+         │
+         ▼
+ 02_analytics_pipeline.py
+         │
+         ▼
+ build_dashboard.py
+         │
+         ▼
+ dashboard.html
+         │
+         ▼
+ app.py (Flask Web Interface)
 
-  Output Files
+# Output Files
 | File | Description |
 |--------|-------------|
 | data_quality_report.json | Summary of data profiling results, completeness checks, and quality metrics. |
@@ -69,7 +70,7 @@ app.py (Flask Web Interface)
 | INDICATOR_CATALOGUE.md | Data dictionary describing calculated indicators and metrics. |
 | dashboard.html | Interactive Plotly dashboard containing visualisations and KPI summaries. |
 
-Flask Web Interface 
+# Flask Web Interface 
 The Flask application provides a lightweight web-based interface that allows users to:
 - Execute a full analytics refresh from the browser.
 - Monitor pipeline execution status.
@@ -77,7 +78,7 @@ The Flask application provides a lightweight web-based interface that allows use
 - Access the interactive dashboard.
 - Retrieve application status through a REST API endpoint.
 
-Important Notes:
+# Important Notes:
 - The analysis is based on a historical snapshot with a fixed reference date of 2026-05-14.
 - Results are intended to support governance and operational review.
 - Generated flags should not be used as automatic decisions for resource allocation, renewals, or personnel evaluation.
