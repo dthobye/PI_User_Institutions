@@ -1,11 +1,19 @@
-# PI_User_Institutions
+HPC User Community Intelligence Dashboard
+A governance intelligence and decision-support framework that transforms anonymized HPC user and project data into actionable insights through automated analytics, governance reporting, and interactive dashboards.
+
+Objective
+The objective of this project is to transform anonymized HPC user and project data into governance intelligence that supports operational monitoring, performance assessment, stakeholder reporting, and evidence-based decision-making within a High Performance Computing environment.
 
 Overview
-The HPC Intelligence Dashboard converts anonymized users.csv and projects.csv extracts into:
-- Data quality summaries
-- User and project performance indicators
-- Governance reports
-- Interactive Plotly dashboards
+
+The HPC User Community Intelligence Dashboard is a data analytics and decision-support solution developed to transform anonymized HPC user and project datasets into actionable governance insights. The framework automates data profiling, indicator calculation, governance reporting, and dashboard generation, enabling stakeholders to monitor user engagement, project performance, and institutional participation through interactive visualizations.
+
+The system produces:
+
+Data quality summaries
+User and project performance indicators
+Governance reports
+Interactive Plotly dashboards
 
 The application includes a Flask-based web interface for refreshing data and viewing dashboard outputs.
 
@@ -21,28 +29,37 @@ Requirements
 - Python 3.8 or later
 - Flask
 - Pandas
-- NumPy
 - Plotly
 
+Technologies Used
+- Python
+- Pandas
+- NumPy
+- Plotly
+- Flask
+- JSON
+- HTML
+- CSS
+
 Project Workflow
-  users.csv + projects.csv
-            │
-            ▼
+users.csv + projects.csv
+        │
+        ▼
 01_data_profiling.py
-            │
-            ▼
+        │
+        ▼
 02_analytics_pipeline.py
-            │
-            ▼
+        │
+        ▼
 build_dashboard.py
-            │
-            ▼
+        │
+        ▼
 dashboard.html
-            │
-            ▼
+        │
+        ▼
 app.py (Flask Web Interface)
 
-Output Files
+  Output Files
 | File | Description |
 |--------|-------------|
 | data_quality_report.json | Summary of data profiling results, completeness checks, and quality metrics. |
